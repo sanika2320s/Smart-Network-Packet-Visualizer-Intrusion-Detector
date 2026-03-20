@@ -1,28 +1,12 @@
-# Smart-Network-Packet-Visualizer-Intrusion-Detector
-# Smart Network Packet Visualizer & Intrusion Detector (SNPVID)
+# SNPVID
+Smart Network Packet Visualizer & Intrusion Detector
 
-## 🚀 Features
-- Real-time packet simulation
-- Intrusion detection logic
-- Interactive web dashboard
-- Beginner-friendly cybersecurity project
+## Quick start
+1. Create a virtualenv: `python -m venv venv` & activate it.
+2. Install: `pip install -r requirements.txt`
+3. Run: `python app.py`
+4. Open `http://127.0.0.1:5000` in your browser.
 
-## 🛠 Tech Stack
-- Python
-- Flask
-- HTML/CSS
-
-## ▶️ Run Locally
-1. python -m venv venv
-2. venv\Scripts\activate
-3. pip install -r requirements.txt
-4. python app.py
-5. Open http://127.0.0.1:5000
-
-## 📌 Future Scope
-- Integrate Scapy for real packet capture
-- Add Machine Learning model
-- Deploy on cloud (AWS/VPS)
-
-## 👩‍💻 Author
-Your Name
+## Notes
+- This is a simulated packet generator for demo and teaching purposes.
+- To extend: replace the simulator with Scapy-based capture, add ML model, deploy to a VPS.

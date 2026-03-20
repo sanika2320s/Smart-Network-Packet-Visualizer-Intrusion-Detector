@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SNPVID — Live Packet Visualizer</title>
+  <link href="/static/css/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>🌐 SNPVID</h1>
+    <p class="subtitle">Smart Network Packet Visualizer & Intrusion Detector</p>
+  </header>
+
+  <main class="grid">
+    <section class="panel flow">
+      <h2>Live Packet Flow</h2>
+      <div id="flow-canvas" class="flow-canvas"></div>
+    </section>
+
+    <section class="panel stats">
+      <h2>Stats</h2>
+      <div class="stat-row">
+        <div class="stat-card">
+          <div id="total">0</div>
+          <div>Total (recent)</div>
+        </div>
+        <div class="stat-card">
+          <div id="intrusions">0</div>
+          <div>Intrusions</div>
+        </div>
+        <div class="stat-card">
+          <div id="avgsize">0</div>
+          <div>Avg. Size (B)</div>
+        </div>
+      </div>
+
+      <canvas id="protoChart" height="180"></canvas>
+
+      <h3>Packet Size Trend (recent)</h3>
+      <canvas id="sizeChart" height="140"></canvas>
+
+      <h3>Recent Packets</h3>
+      <div id="packetList" class="packet-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">Demo project • For presentation purposes</footer>
+
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
